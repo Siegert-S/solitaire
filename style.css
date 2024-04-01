@@ -44,3 +44,11 @@ body {
     height: 150px;
     margin: 4px;
 }
+
+.card{
+    width: 99px;
+    height: 154px;
+    border-radius: 10px;
+
+    background: url(./img/cards.png) 1280px 613px;
+}
