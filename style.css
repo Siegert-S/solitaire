@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    background-color: rgb(20, 20, 110);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#game_feld {
+    background-color: green;
+    border-radius: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.75);
+    max-width: 1024px;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+}
+
+.upper_feld{
+    display: flex;
+    justify-content: space-between;
+}
+
+.lower_feld{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.draw_feld{
+    display: flex;
+}
+
+.discard_feld{
+    display: flex;
+}
+
+.feld_frame {
+    border-radius: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.75);
+    width: 100px;
+    height: 150px;
+    margin: 4px;
+}
