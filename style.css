@@ -1,3 +1,28 @@
+:root {
+    --card_width: 99px;
+    --card_height: 154px;
+    --card_raidus: 10px;
+
+    --hearts: 459px;
+    --diamonds: 613px;
+    --spades: 306px;
+    --clubs: 0px;
+
+    --ace: 0px;
+    --king: 99px;
+    --queen: 197px;
+    --jack: 296px;
+    --ten: 394px;
+    --nine: 493px;
+    --eight: 591px;
+    --seven: 689px;
+    --six: 788px;
+    --five: 886px;
+    --four: 985px;
+    --three: 1083px;
+    --two: 1182px;
+}
+
 body {
     margin: 0;
     background-color: rgb(20, 20, 110);
@@ -19,21 +44,21 @@ body {
     padding: 12px;
 }
 
-.upper_feld{
+.upper_feld {
     display: flex;
     justify-content: space-between;
 }
 
-.lower_feld{
+.lower_feld {
     display: flex;
     justify-content: space-evenly;
 }
 
-.draw_feld{
+.draw_feld {
     display: flex;
 }
 
-.discard_feld{
+.discard_feld {
     display: flex;
 }
 
@@ -45,10 +70,8 @@ body {
     margin: 4px;
 }
 
-.card{
-    width: 99px;
-    height: 154px;
-    border-radius: 10px;
-
-    background: url(./img/cards.png) 1280px 613px;
+.card {
+    width: var(--card_width);
+    height: var(--card_height);
+    border-radius: var(--card_raidus);
 }

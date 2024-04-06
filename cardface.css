@@ -1,0 +1,211 @@
+.face_0 {
+    background: url(./img/cards.png) 1083px 153px;
+}
+
+.face_1 {
+    background: url(./img/cards.png) var(--ace) var(--clubs);
+}
+
+.face_2 {
+    background: url(./img/cards.png) var(--king) var(--clubs);
+}
+
+.face_3 {
+    background: url(./img/cards.png) var(--queen) var(--clubs);
+}
+
+.face_4 {
+    background: url(./img/cards.png) var(--jack) var(--clubs);
+}
+
+.face_5 {
+    background: url(./img/cards.png) var(--ten) var(--clubs);
+}
+
+.face_6 {
+    background: url(./img/cards.png) var(--nine) var(--clubs);
+}
+
+.face_7 {
+    background: url(./img/cards.png) var(--eight) var(--clubs);
+}
+
+.face_8 {
+    background: url(./img/cards.png) var(--seven) var(--clubs);
+}
+
+.face_9 {
+    background: url(./img/cards.png) var(--six) var(--clubs);
+}
+
+.face_10 {
+    background: url(./img/cards.png) var(--five) var(--clubs);
+}
+
+.face_11 {
+    background: url(./img/cards.png) var(--four) var(--clubs);
+}
+
+.face_12 {
+    background: url(./img/cards.png) var(--three) var(--clubs);
+}
+
+.face_13 {
+    background: url(./img/cards.png) var(--two) var(--clubs);
+}
+
+.face_14 {
+    background: url(./img/cards.png) var(--ace) var(--spades);
+}
+
+.face_15 {
+    background: url(./img/cards.png) var(--king) var(--spades);
+}
+
+.face_16 {
+    background: url(./img/cards.png) var(--queen) var(--spades);
+}
+
+.face_17 {
+    background: url(./img/cards.png) var(--jack) var(--spades);
+}
+
+.face_18 {
+    background: url(./img/cards.png) var(--ten) var(--spades);
+}
+
+.face_19 {
+    background: url(./img/cards.png) var(--nine) var(--spades);
+}
+
+.face_20 {
+    background: url(./img/cards.png) var(--eight) var(--spades);
+}
+
+.face_21 {
+    background: url(./img/cards.png) var(--seven) var(--spades);
+}
+
+.face_22 {
+    background: url(./img/cards.png) var(--six) var(--spades);
+}
+
+.face_23 {
+    background: url(./img/cards.png) var(--five) var(--spades);
+}
+
+.face_24 {
+    background: url(./img/cards.png) var(--four) var(--spades);
+}
+
+.face_25 {
+    background: url(./img/cards.png) var(--three) var(--spades);
+}
+
+.face_26 {
+    background: url(./img/cards.png) var(--two) var(--spades);
+}
+
+.face_27 {
+    background: url(./img/cards.png) var(--ace) var(--hearts);
+}
+
+.face_28 {
+    background: url(./img/cards.png) var(--king) var(--hearts);
+}
+
+.face_29 {
+    background: url(./img/cards.png) var(--queen) var(--hearts);
+}
+
+.face_30 {
+    background: url(./img/cards.png) var(--jack) var(--hearts);
+}
+
+.face_31 {
+    background: url(./img/cards.png) var(--ten) var(--hearts);
+}
+
+.face_32 {
+    background: url(./img/cards.png) var(--nine) var(--hearts);
+}
+
+.face_33 {
+    background: url(./img/cards.png) var(--eight) var(--hearts);
+}
+
+.face_34 {
+    background: url(./img/cards.png) var(--seven) var(--hearts);
+}
+
+.face_35 {
+    background: url(./img/cards.png) var(--six) var(--hearts);
+}
+
+.face_36 {
+    background: url(./img/cards.png) var(--five) var(--hearts);
+}
+
+.face_37 {
+    background: url(./img/cards.png) var(--four) var(--hearts);
+}
+
+.face_38 {
+    background: url(./img/cards.png) var(--three) var(--hearts);
+}
+
+.face_39 {
+    background: url(./img/cards.png) var(--two) var(--hearts);
+}
+
+.face_40 {
+    background: url(./img/cards.png) var(--ace) var(--diamonds);
+}
+
+.face_41 {
+    background: url(./img/cards.png) var(--king) var(--diamonds);
+}
+
+.face_42 {
+    background: url(./img/cards.png) var(--queen) var(--diamonds);
+}
+
+.face_43 {
+    background: url(./img/cards.png) var(--jack) var(--diamonds);
+}
+
+.face_44 {
+    background: url(./img/cards.png) var(--ten) var(--diamonds);
+}
+
+.face_45 {
+    background: url(./img/cards.png) var(--nine) var(--diamonds);
+}
+
+.face_46 {
+    background: url(./img/cards.png) var(--eight) var(--diamonds);
+}
+
+.face_47 {
+    background: url(./img/cards.png) var(--seven) var(--diamonds);
+}
+
+.face_48 {
+    background: url(./img/cards.png) var(--six) var(--diamonds);
+}
+
+.face_49 {
+    background: url(./img/cards.png) var(--five) var(--diamonds);
+}
+
+.face_50 {
+    background: url(./img/cards.png) var(--four) var(--diamonds);
+}
+
+.face_51 {
+    background: url(./img/cards.png) var(--three) var(--diamonds);
+}
+
+.face_52 {
+    background: url(./img/cards.png) var(--two) var(--diamonds);
+}
