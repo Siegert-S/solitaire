@@ -19,3 +19,15 @@ let cordinatsY = [
     459,
     613
 ]
+
+/**
+ * This function returns a rendom number betwen 0 (included) and  "limit"(excluded) that is given to the function 
+ * 
+ * @param {int} limit - betwen this number and 0 is the random output
+ * @returns {int} - gives the random number
+ */
+function rndNum(limit) {
+    let rnd = Math.random();
+    let number = Math.floor(rnd * limit);
+    return number;
+}
