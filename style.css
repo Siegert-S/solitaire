@@ -32,7 +32,7 @@ body {
     height: 100vh;
 }
 
-#game_feld {
+#game_field {
     background-color: green;
     border-radius: 16px;
     border: 2px solid rgba(255, 255, 255, 0.75);
@@ -44,25 +44,25 @@ body {
     padding: 12px;
 }
 
-.upper_feld {
+.upper_field {
     display: flex;
     justify-content: space-between;
 }
 
-.lower_feld {
+.lower_field {
     display: flex;
     justify-content: space-evenly;
 }
 
-.draw_feld {
+.draw_field {
     display: flex;
 }
 
-.discard_feld {
+.discard_field {
     display: flex;
 }
 
-.feld_frame {
+.field_frame {
     border-radius: 8px;
     border: 2px solid rgba(255, 255, 255, 0.75);
     width: 100px;
@@ -74,4 +74,12 @@ body {
     width: var(--card_width);
     height: var(--card_height);
     border-radius: var(--card_raidus);
+    text-align: right;
+    color: transparent;
+    font-size: 0px;
+}
+
+.stack {
+    /* padding-top: 25px; */
+    margin-top: 23px;
 }

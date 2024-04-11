@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=f, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solitaire</title>
 
     <link rel="stylesheet" href="./style.css">
@@ -11,48 +11,75 @@
     <script src="./script.js"></script>
 </head>
 
-<body>
-    <section id="game_feld">
-        <div class="upper_feld">
-            <div class="draw_feld">
-                <div class="feld_frame">zieh stapel</div>
-                <div class="feld_frame">zieh stapel</div>
+<body onload="startPage()">
+    <section id="game_field">
+        <div class="upper_field">
+            <div class="draw_field">
+                <div id="field_7" class="field_frame">zieh stapel</div>
+                <div id="field_8" class="field_frame">zieh stapel</div>
             </div>
-            <div class="discard_feld">
-                <div class="feld_frame">ablagestapel</div>
-                <div class="feld_frame">ablagestapel</div>
-                <div class="feld_frame">ablagestapel</div>
-                <div class="feld_frame">ablagestapel</div>
+            <div class="discard_field">
+                <div class="field_frame">ablagestapel</div>
+                <div class="field_frame">ablagestapel</div>
+                <div class="field_frame">ablagestapel</div>
+                <div class="field_frame">ablagestapel</div>
             </div>
         </div>
         <div>
-            <div class="lower_feld">
-                <div class="feld_frame">spiel stapel
-                    <div class="card face_0"></div>
-                    <div class="card face_7"></div>
+            <div class="lower_field">
+                <div id="field_0" class="field_frame">
+                    <div class="card face_0">card
+                        <div class="card stack face_0">card
+                            <div class="card stack face_0">card
+                                <div class="card stack face_0">card
+                                    <div class="card stack face_0">card
+                                        <div class="card stack face_0">card
+                                            <div class="card stack face_0">card
+                                                <div class="card stack face_0">card
+                                                    <div class="card stack face_0">card
+                                                        <div class="card stack face_0">card
+                                                            <div class="card stack face_0">card
+                                                                <div class="card stack face_0">card
+                                                                    <div class="card stack face_41">card
+                                                            
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
 
                 </div>
-                <div class="feld_frame">spiel stapel
-                    <div class="card face_1"></div>
-                    <div class="card face_8"></div>
+                <div id="field_1" class="field_frame">spiel stapel
+                    <div class="card face_14"></div>
+                    <div class="card face_26"></div>
                 </div>
-                <div class="feld_frame">spiel stapel
-                    <div class="card face_2"></div>
-                    <div class="card face_9"></div>
+                <div id="field_2" class="field_frame">spiel stapel
+                    <div class="card face_27"></div>
+                    <div class="card face_39"></div>
                 </div>
-                <div class="feld_frame">spiel stapel
+                <div id="field_3" class="field_frame">spiel stapel
                     <div class="card face_3"></div>
                     <div class="card face_10"></div>
                 </div>
-                <div class="feld_frame">spiel stapel
+                <div id="field_4" class="field_frame">spiel stapel
                     <div class="card face_4"></div>
                     <div class="card face_11"></div>
                 </div>
-                <div class="feld_frame">spiel stapel
+                <div id="field_5" class="field_frame">spiel stapel
                     <div class="card face_5"></div>
                     <div class="card face_12"></div>
                 </div>
-                <div class="feld_frame">spiel stapel
+                <div id="field_6" class="field_frame">spiel stapel
                     <div class="card face_6"></div>
                 </div>
             </div>
