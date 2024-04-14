@@ -46,6 +46,9 @@ function shuffleDeck() {
 function prepareGame() {
     fillDeck();
     shuffleDeck();
+    dealOutCards();
+    openFirstCard();
+    renderLowerField();
 }
 
 /**
@@ -59,8 +62,7 @@ function dealOutCards() {
             deck.splice(deck.length - 1, 1);
         }
     }
-    while (deck.length>0) {
-        console.log(deck.length);
+    while (deck.length > 0) {
         let card = createCard(deck[deck.length - 1]);
         cardstacks[7].push(card);
         deck.splice(deck.length - 1, 1);
@@ -85,28 +87,80 @@ function createCard(index) {
     return card;
 }
 
-
-// test functions
-
-function render() {
-    clearAllFields();
-    for (let i = 0; i < deck.length; i++) {
-        let id = `field_${i % 7}`;
-        let card = deck[i];
-        renderField(id, card);
+function openFirstCard() {
+    for (let i = 0; i < 7; i++) {
+        cardstacks[i][cardstacks[i].length-1].facedown=false;        
     }
 }
 
-function renderField(id, card) {
-    let frame = document.getElementById(id);
-    frame.innerHTML += /*html*/`
-        <div class="card face_${card}"></div>
+
+
+
+// search function
+
+function getDeepestDiv(id) {
+    return findDeepestDiv(document.getElementById(id));
+}
+
+function findDeepestDiv(parentcontainer) {
+    let childcontainer = searchForDiv(parentcontainer);
+    if (!childcontainer) {
+        return parentcontainer;
+    } else {
+        return findDeepestDiv(childcontainer);
+    }
+}
+
+function searchForDiv(target) {
+    return target.querySelector("div");
+}
+
+// test functions
+
+
+function renderLowerField() {
+    for (let i = 0; i < 7; i++) {
+        renderStack(i);
+    }
+}
+
+function renderStack(number) {
+    clearField(number);
+    // let frame = document.getElementById(`field_${number}`);
+    for (let i = 0; i < cardstacks[number].length; i++) {
+        const card = cardstacks[number][i];
+        let frame = getDeepestDiv(`field_${number}`);
+        if (i == 0) {
+            frame.innerHTML += printFirstCard(card);
+        } else {
+            frame.innerHTML += printCard(card);
+        }
+
+    }
+
+}
+
+
+function printCard(card) {
+    let face = (card.facedown) ? 'face_0' : `face_${card.number}`;
+    return /*html*/`
+        <div class="card stack ${face}"></div>
+    `;
+}
+
+function printFirstCard(card) {
+    let face = (card.facedown) ? 'face_0' : `face_${card.number}`;
+    return /*html*/`
+        <div class="card stack ${face}" style="margin-top: 0px;"></div>
     `;
 }
 
 function clearAllFields() {
-    for (let i = 0; i < 7; i++) {
-        document.getElementById(`field_${i}`).innerHTML = '';
-
+    for (let i = 0; i < 13; i++) {
+        clearField(i);
     }
+}
+
+function clearField(index) {
+    document.getElementById(`field_${index}`).innerHTML = '';
 }

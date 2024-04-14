@@ -79,7 +79,16 @@ body {
     font-size: 0px;
 }
 
+.stack:before {
+    content: "/";
+    height: 25px;
+}
+
 .stack {
     /* padding-top: 25px; */
     margin-top: 23px;
+}
+
+.first{
+    margin-top: 0px !important;
 }
